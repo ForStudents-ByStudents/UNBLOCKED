@@ -1,0 +1,28 @@
+.brand-logo img,
+img.brand-logo {
+  display: block;
+  height: auto;
+}
+
+.brand-logo--masthead {
+  max-width: 530px;
+  width: 100%;
+  transform: rotate(-1.2deg);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.brand-logo--masthead img {
+  width: 100%;
+  max-height: 125px;
+  object-fit: contain;
+}
+
+.brand-logo--masthead:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.brand-logo--compact {
+  height: 38px;
+  width: auto;
+}
