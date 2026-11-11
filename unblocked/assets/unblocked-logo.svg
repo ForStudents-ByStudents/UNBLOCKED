@@ -1,0 +1,118 @@
+<svg viewBox="0 0 520 110" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Glitch displacement filter -->
+    <filter id="glitchTear" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="2" stdDeviation="0" flood-color="#C7E85B" flood-opacity="0.95"/>
+      <feDropShadow dx="-2" dy="-1" stdDeviation="0" flood-color="#173E2E" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- ===================================================================
+       THE BOX: High-contrast dark box with lime & green border
+       =================================================================== -->
+  <!-- Outer Shadow / Offset Plate -->
+  <polygon points="12,8 518,8 510,110 6,110" fill="#173E2E"/>
+
+  <!-- Main Dark Interior Box -->
+  <polygon points="8,4 514,4 506,106 2,106" fill="#06140C" stroke="#C7E85B" stroke-width="2.5"/>
+
+  <!-- Inner High-Contrast Frame Line -->
+  <polygon points="14,10 508,10 502,100 8,100" stroke="#173E2E" stroke-width="1.5" fill="none"/>
+
+  <!-- Horizontal Digital Glitch Cut Lines Across Box -->
+  <line x1="8" y1="36" x2="512" y2="36" stroke="#173E2E" stroke-width="1.2" stroke-dasharray="14,6,40,4,20,8"/>
+  <line x1="4" y1="72" x2="508" y2="72" stroke="#C7E85B" stroke-width="1" opacity="0.6" stroke-dasharray="6,12,30,6,8,16"/>
+
+  <!-- Sliced Displacement Pixels -->
+  <rect x="22" y="34" width="10" height="4" fill="#C7E85B"/>
+  <rect x="250" y="60" width="16" height="3" fill="#C7E85B"/>
+  <rect x="490" y="32" width="12" height="4" fill="#C7E85B"/>
+  <rect x="140" y="70" width="8" height="3" fill="#C7E85B"/>
+
+  <!-- ===================================================================
+       THE BIG TYPOGRAPHY: UNBLOCKED
+       Bold, distinctive letterforms with open counters in B and D, and clear C
+       =================================================================== -->
+
+  <!-- LAYER 1: Chromatic Lime Offset Underlayer (shifted -2px, -1px) -->
+  <g fill="#C7E85B" fill-rule="evenodd" transform="translate(-2, -1)" opacity="0.85">
+    <!-- U -->
+    <path d="M 24 18 L 38 18 L 38 74 L 54 74 L 54 18 L 68 18 L 68 78 L 54 92 L 38 92 L 24 78 Z"/>
+    <!-- N -->
+    <path d="M 76 18 L 92 18 L 108 68 L 108 18 L 122 18 L 122 92 L 106 92 L 90 42 L 90 92 L 76 92 Z"/>
+    <!-- B (Distinct open counters) -->
+    <path d="M 130 18 L 166 18 L 174 26 L 174 48 L 168 53 L 174 58 L 174 84 L 166 92 L 130 92 Z M 144 30 L 144 48 L 158 48 L 162 44 L 162 34 L 158 30 Z M 144 58 L 144 80 L 158 80 L 162 76 L 162 62 L 158 58 Z"/>
+    <!-- L -->
+    <path d="M 182 18 L 196 18 L 196 78 L 222 78 L 222 92 L 182 92 Z"/>
+    <!-- O (Distinct open counter) -->
+    <path d="M 242 18 L 264 18 L 276 30 L 276 80 L 264 92 L 242 92 L 230 80 L 230 30 Z M 244 32 L 244 78 L 262 78 L 262 32 Z"/>
+    <!-- C (Unmistakable open C) -->
+    <path d="M 328 18 L 296 18 L 284 30 L 284 80 L 296 92 L 328 92 L 328 76 L 300 76 L 298 72 L 298 38 L 300 34 L 328 34 Z"/>
+    <!-- K -->
+    <path d="M 336 18 L 350 18 L 350 48 L 368 18 L 382 18 L 360 52 L 382 92 L 368 92 L 350 60 L 350 92 L 336 92 Z"/>
+    <!-- E -->
+    <path d="M 390 18 L 432 18 L 432 32 L 404 32 L 404 48 L 426 48 L 426 60 L 404 60 L 404 78 L 432 78 L 432 92 L 390 92 Z"/>
+    <!-- D (Distinct open counter) -->
+    <path d="M 440 18 L 472 18 L 486 32 L 486 78 L 472 92 L 440 92 Z M 454 32 L 454 78 L 468 78 L 472 74 L 472 36 L 468 32 Z"/>
+  </g>
+
+  <!-- LAYER 2: Deep Forest Green Shadow Shift (shifted +2px, +2px) -->
+  <g fill="#173E2E" fill-rule="evenodd" transform="translate(2, 2)">
+    <!-- U -->
+    <path d="M 24 18 L 38 18 L 38 74 L 54 74 L 54 18 L 68 18 L 68 78 L 54 92 L 38 92 L 24 78 Z"/>
+    <!-- N -->
+    <path d="M 76 18 L 92 18 L 108 68 L 108 18 L 122 18 L 122 92 L 106 92 L 90 42 L 90 92 L 76 92 Z"/>
+    <!-- B (Distinct open counters) -->
+    <path d="M 130 18 L 166 18 L 174 26 L 174 48 L 168 53 L 174 58 L 174 84 L 166 92 L 130 92 Z M 144 30 L 144 48 L 158 48 L 162 44 L 162 34 L 158 30 Z M 144 58 L 144 80 L 158 80 L 162 76 L 162 62 L 158 58 Z"/>
+    <!-- L -->
+    <path d="M 182 18 L 196 18 L 196 78 L 222 78 L 222 92 L 182 92 Z"/>
+    <!-- O (Distinct open counter) -->
+    <path d="M 242 18 L 264 18 L 276 30 L 276 80 L 264 92 L 242 92 L 230 80 L 230 30 Z M 244 32 L 244 78 L 262 78 L 262 32 Z"/>
+    <!-- C (Unmistakable open C) -->
+    <path d="M 328 18 L 296 18 L 284 30 L 284 80 L 296 92 L 328 92 L 328 76 L 300 76 L 298 72 L 298 38 L 300 34 L 328 34 Z"/>
+    <!-- K -->
+    <path d="M 336 18 L 350 18 L 350 48 L 368 18 L 382 18 L 360 52 L 382 92 L 368 92 L 350 60 L 350 92 L 336 92 Z"/>
+    <!-- E -->
+    <path d="M 390 18 L 432 18 L 432 32 L 404 32 L 404 48 L 426 48 L 426 60 L 404 60 L 404 78 L 432 78 L 432 92 L 390 92 Z"/>
+    <!-- D (Distinct open counter) -->
+    <path d="M 440 18 L 472 18 L 486 32 L 486 78 L 472 92 L 440 92 Z M 454 32 L 454 78 L 468 78 L 472 74 L 472 36 L 468 32 Z"/>
+  </g>
+
+  <!-- LAYER 3: Primary Bold Distorted Typography (Warm Off-White) -->
+  <g fill="#F0EAD8" fill-rule="evenodd">
+    <!-- U (Displaced base) -->
+    <path d="M 24 18 L 38 18 L 38 74 L 54 74 L 54 18 L 68 18 L 68 78 L 54 92 L 38 92 L 24 78 Z"/>
+    <rect x="22" y="44" width="18" height="4" fill="#06140C"/>
+
+    <!-- N (Staggered diagonal) -->
+    <path d="M 76 18 L 92 18 L 108 68 L 108 18 L 122 18 L 122 92 L 106 92 L 90 42 L 90 92 L 76 92 Z"/>
+    <rect x="105" y="38" width="18" height="4" fill="#06140C"/>
+
+    <!-- B (Distinct open counters inside top and bottom loops) -->
+    <path d="M 130 18 L 166 18 L 174 26 L 174 48 L 168 53 L 174 58 L 174 84 L 166 92 L 130 92 Z M 144 30 L 144 48 L 158 48 L 162 44 L 162 34 L 158 30 Z M 144 58 L 144 80 L 158 80 L 162 76 L 162 62 L 158 58 Z"/>
+    <rect x="166" y="51" width="10" height="4" fill="#C7E85B"/>
+
+    <!-- L (Cut arm) -->
+    <path d="M 182 18 L 196 18 L 196 78 L 222 78 L 222 92 L 182 92 Z"/>
+    <line x1="178" y1="52" x2="226" y2="52" stroke="#C7E85B" stroke-width="2" stroke-dasharray="4,4"/>
+
+    <!-- O (Hexagonal loop with CRT center tear) -->
+    <path d="M 242 18 L 264 18 L 276 30 L 276 80 L 264 92 L 242 92 L 230 80 L 230 30 Z M 244 32 L 244 78 L 262 78 L 262 32 Z"/>
+    <line x1="226" y1="52" x2="280" y2="52" stroke="#C7E85B" stroke-width="2"/>
+
+    <!-- C (Clean, bold, open aperture with subtle digital step on spine - NO middle crossbar) -->
+    <path d="M 328 18 L 296 18 L 284 30 L 284 48 L 280 48 L 280 54 L 284 54 L 284 80 L 296 92 L 328 92 L 328 76 L 300 76 L 298 72 L 298 54 L 294 54 L 294 48 L 298 48 L 298 38 L 300 34 L 328 34 Z"/>
+
+    <!-- K (Sharp joint) -->
+    <path d="M 336 18 L 350 18 L 350 48 L 368 18 L 382 18 L 360 52 L 382 92 L 368 92 L 350 60 L 350 92 L 336 92 Z"/>
+    <rect x="348" y="44" width="16" height="4" fill="#06140C"/>
+
+    <!-- E (Stretched jagged arms) -->
+    <path d="M 390 18 L 432 18 L 432 32 L 404 32 L 404 47 L 426 47 L 426 59 L 404 59 L 404 78 L 432 78 L 432 92 L 390 92 Z"/>
+    <rect x="418" y="24" width="8" height="3" fill="#06140C"/>
+
+    <!-- D (Bold block with distinct open counter) -->
+    <path d="M 440 18 L 472 18 L 486 32 L 486 78 L 472 92 L 440 92 Z M 454 32 L 454 78 L 468 78 L 472 74 L 472 36 L 468 32 Z"/>
+    <rect x="482" y="48" width="8" height="4" fill="#C7E85B"/>
+  </g>
+</svg>

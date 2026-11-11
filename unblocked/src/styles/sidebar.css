@@ -1,0 +1,226 @@
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.teacher-note {
+  background-color: var(--neon-lime);
+  color: var(--forest-deep);
+  padding: 18px 14px 14px;
+  border: 1px solid #a6c93d;
+  box-shadow: 3px 4px 6px rgba(23, 62, 46, 0.25);
+  transform: rotate(2.5deg);
+  position: relative;
+  font-family: var(--font-marker);
+  user-select: none;
+}
+
+.teacher-note::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 30%;
+  width: 70px;
+  height: 20px;
+  background-color: rgba(228, 220, 190, 0.75);
+  border: 1px solid rgba(180, 170, 140, 0.5);
+  transform: rotate(-1.5deg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-note-text {
+  font-size: 1.05rem;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.teacher-note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.teacher-note-sub {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.teacher-note-smiley {
+  font-size: 1.2rem;
+  transform: rotate(15deg);
+}
+
+.teacher-note-link,
+.teacher-note-link:visited {
+  text-decoration: underline;
+}
+
+.teacher-note-link .teacher-note-sub {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+.teacher-note-link:hover .teacher-note-sub {
+  color: #1a365d;
+  text-decoration: underline;
+}
+
+.sidebar-panel {
+  background-color: var(--paper-light);
+  border: 1.5px solid var(--forest-deep);
+  box-shadow: 3px 3px 0px rgba(23, 62, 46, 0.25);
+}
+
+.sidebar-header {
+  background-color: var(--forest-deep);
+  color: var(--paper-warm);
+  padding: 6px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sidebar-header-icon {
+  color: var(--neon-lime);
+  font-size: 1.1rem;
+}
+
+.recently-added-list {
+  list-style: none;
+}
+
+.recent-row {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(23, 62, 46, 0.18);
+  cursor: pointer;
+  transition: background-color 0.12s ease;
+}
+
+.recent-item:last-child .recent-row {
+  border-bottom: none;
+}
+
+.recent-row:hover {
+  background-color: rgba(199, 232, 91, 0.25);
+}
+
+.recent-thumb {
+  width: 34px;
+  height: 34px;
+  background-color: var(--forest-deep);
+  flex-shrink: 0;
+  border: 1px solid var(--forest-deep);
+  overflow: hidden;
+}
+
+.recent-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recent-info {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.recent-title {
+  font-family: var(--font-typewriter);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--dark-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.recent-cat {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  color: var(--muted-gray-green);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.recent-arrow {
+  color: var(--forest-deep);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.sidebar-doodle-box {
+  background-color: var(--paper-light);
+  border: 1.5px dashed var(--forest-deep);
+  padding: 12px;
+  text-align: center;
+  transform: rotate(-1deg);
+  user-select: none;
+}
+
+.doodle-text {
+  font-family: var(--font-marker);
+  font-size: 1.1rem;
+  line-height: 1.15;
+  color: var(--forest-deep);
+}
+
+.doodle-sub {
+  font-family: var(--font-marker);
+  font-size: 0.82rem;
+  color: var(--forest-secondary);
+  margin-top: 4px;
+}
+
+.doodle-art {
+  margin: 6px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: var(--forest-deep);
+}
+
+.sidebar-barcode-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 0;
+  opacity: 0.85;
+}
+
+.barcode-svg {
+  width: 140px;
+  height: 36px;
+}
+
+.barcode-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  color: var(--forest-deep);
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+
+.doodle-face {
+  font-size: 1.4rem;
+}

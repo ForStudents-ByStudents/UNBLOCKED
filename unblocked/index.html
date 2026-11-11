@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNBLOCKED — Play free games any time, any place</title>
+    <meta name="description" content="UNBLOCKED — Play free games any time, any place" />
+    <meta property="og:title" content="UNBLOCKED — Play free games any time, any place" />
+    <meta property="og:description" content="The underground student gaming zone." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Permanent+Marker&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/index.css" />
+  </head>
+
+  <body>
+    <div class="magazine-margin-top"></div>
+
+    <div class="container">
+      <!-- ================= NAVIGATION ================= -->
+      <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-inner">
+          <ul class="nav-links">
+            <li class="nav-item"><a href="#/" class="nav-link" data-nav="home">HOME</a></li>
+            <li class="nav-item"><a href="#/games" class="nav-link" data-nav="games">GAMES</a></li>
+          </ul>
+
+          <div class="nav-tools">
+            <div class="nav-search">
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="Search games..."
+                aria-label="Search games"
+                autocomplete="off"
+              />
+              <span class="nav-search-icon" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
+
+            <a href="#/" class="nav-brand" aria-label="UNBLOCKED home">
+             <img class="brand-logo brand-logo--compact" src="assets/unblocked-logo.svg" alt="" />
+           </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ================= VIEW 1: HOME ================= -->
+      <div id="homeView">
+        <header class="masthead">
+          <div class="masthead-meta-row">
+            <span>★ THE UNDERGROUND GAMING WEBSITE ★</span>
+            <span>NEW GAMES EVERY WEEK</span>
+          </div>
+
+          <div class="masthead-center">
+            <div class="masthead-stamp" aria-hidden="true">
+              <span>FOR STUDENTS.</span>
+              <span>BY STUDENTS.</span>
+            </div>
+
+            <h1 class="brand-logo brand-logo--masthead" id="mastheadLogo">
+              <img src="assets/unblocked-logo.svg" alt="UNBLOCKED" />
+            </h1>
+            
+            <div class="masthead-crt-container" aria-hidden="true">
+              <div class="masthead-crt-monitor">
+                <div class="masthead-crt-screen">
+                  <span class="masthead-crt-glitch">ONLINE 24/7</span>
+                </div>
+              </div>
+              <div class="masthead-crt-stand"></div>
+              <div class="masthead-crt-base"></div>
+              <span class="masthead-crt-note">Even at your school</span>
+              <span class="masthead-star">★</span>
+            </div>
+          </div>
+
+          <div class="masthead-tagline">PLAY FREE GAMES &amp; MORE. ANY TIME, ANY PLACE </div>
+        </header>
+
+        <main class="main-content">
+          <div class="left-column">
+            <!-- Cover story: filled in from games.json (see src/featured.js) -->
+            <section class="featured-story" id="featuredStory" hidden></section>
+
+            <!-- Game index -->
+            <section class="game-index-section" id="game-index" aria-label="Game catalog">
+              <div class="game-index-header-row">
+                <div class="game-index-title-box">
+                  <h2 class="game-index-title">BROWSE ALL GAMES</h2>
+                </div>
+                <div class="game-index-note">WE ADD NEW GAMES EVERY WEEK</div>
+              </div>
+
+              <div class="category-filter-bar" id="categoryBar" role="toolbar" aria-label="Game categories"></div>
+              <div id="gamesList" aria-live="polite">
+                <div class="no-games-found">LOADING...</div>
+              </div>
+            </section>
+          </div>
+
+          <aside class="right-sidebar" aria-label="Sidebar">
+            <div class="teacher-note">
+              <div class="teacher-note-text">DON´T MISS OUT IF<br />THIS SITE GETS BLOCKED:</div>
+              <div class="teacher-note-footer">
+                <a href="https://example.com" class="teacher-note-link">
+                 <span class="teacher-note-sub">CHECK OTHER LINKS</span>
+                </a>
+                <span class="teacher-note-smiley" aria-hidden="true">☻</span>
+              </div>
+            </div>
+
+            <div class="sidebar-panel">
+              <div class="sidebar-header">
+                <h3 class="sidebar-title">RECENTLY ADDED</h3>
+                <span class="sidebar-header-icon" aria-hidden="true">✦</span>
+              </div>
+              <ul class="recently-added-list" id="recentList"></ul>
+            </div>
+
+            <div class="sidebar-doodle-box" aria-hidden="true">
+              <div class="doodle-text">SHARE WITH<br />YOUR FRIENDS</div>
+              <div class="doodle-art">
+                <span>★</span>
+                <span class="doodle-face">[•‿•]</span>
+                <span>★</span>
+              </div>
+              <div class="doodle-sub">SUPPORT US BY PLAYING</div>
+            </div>
+
+            <div class="sidebar-barcode-box" aria-hidden="true">
+              <svg class="barcode-svg" viewBox="0 0 140 36" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#173E2E" d="M0 0h3v36h-3zM5 0h2v36h-2zM10 0h5v36h-5zM18 0h2v36h-2zM23 0h4v36h-4zM30 0h2v36h-2zM35 0h6v36h-6zM44 0h3v36h-3zM50 0h2v36h-2zM55 0h7v36h-7zM65 0h3v36h-3zM71 0h4v36h-4zM78 0h2v36h-2zM83 0h5v36h-5zM91 0h3v36h-3zM97 0h6v36h-6zM106 0h2v36h-2zM111 0h4v36h-4zM118 0h3v36h-3zM124 0h5v36h-5zM132 0h2v36h-2zM136 0h4v36h-4z" />
+              </svg>
+              <span class="barcode-label">UNB-26-00</span>
+            </div>
+          </aside>
+        </main>
+      </div>
+
+      <!-- ================= VIEW 2: GAME PAGE ================= -->
+      <section id="gameView" class="game-page-view" aria-label="Game page" hidden>
+        <header class="game-page-header">
+          <div class="game-page-meta-kicker">
+            <span>★ UNBLOCKED GAME ARCHIVE ★</span>
+            <span>VOL. 01 · FALL '97</span>
+          </div>
+
+          <div class="game-page-badge-row">
+            <span class="game-page-cat-badge" id="gameGenre"></span>
+            <span class="game-page-rating-badge" id="gameRating"></span>
+          </div>
+
+          <div class="game-page-title-block">
+            <h2 class="game-page-title-text" id="gameTitle"></h2>
+          </div>
+
+          <div class="game-page-subtitle-annotation" id="gameSubtitle"></div>
+        </header>
+
+        <div class="game-player-wrapper" id="playerWrapper">
+          <button class="player-fullscreen-floating-btn" id="fullscreenBtn" type="button" aria-label="Toggle fullscreen">
+           <span class="fullscreen-icon">⛶</span>
+           <span class="fullscreen-text">FULLSCREEN</span>
+          </button>
+          <div class="game-player-screen" id="playerScreen"></div>
+        </div>
+
+        <nav class="game-nav-bar" aria-label="Game navigation">
+          <a class="game-nav-btn" id="prevGame" href="#/">← PREVIOUS</a>
+          <a class="game-nav-btn primary" href="#/games">← BACK TO GAMES</a>
+          <a class="game-nav-btn accent" id="nextGame" href="#/">NEXT →</a>
+        </nav>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img class="brand-logo brand-logo--compact" src="assets/unblocked-logo.svg" alt="UNBLOCKED" />
+          <span class="footer-divider"></span>
+          <span class="footer-slogan">THE UNDERGROUD GAMING WEBSITE</span>
+        </div>
+        <div class="footer-right">
+          <span>A project of "FOR STUDENTS. BY STUDENTS."</span>
+          <span class="footer-star">★</span>
+          <span>All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Browsers block ES modules and fetch() on file:// pages, so explain how to run the site.
+      if (location.protocol === 'file:') {
+        document.getElementById('gamesList').innerHTML =
+          '<div class="no-games-found">OPEN THIS SITE THROUGH A LOCAL SERVER, NOT BY DOUBLE-CLICKING THE FILE.<br />RUN <code>npm start</code> (OR <code>python3 -m http.server</code>) AND VISIT THE ADDRESS IT PRINTS. SEE README.</div>';
+      }
+    </script>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
