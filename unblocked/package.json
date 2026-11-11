@@ -1,0 +1,10 @@
+{
+  "name": "unblocked",
+  "private": true,
+  "version": "1.0.0",
+  "description": "UNBLOCKED — an underground student gaming zine and web arcade (Vol. 01 · Fall '97).",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

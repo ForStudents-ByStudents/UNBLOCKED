@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Shadow / Plate -->
+  <polygon points="5,4 238,4 234,46 2,46" fill="#173E2E"/>
+
+  <!-- High-contrast Dark Box -->
+  <polygon points="3,2 236,2 232,44 0,44" fill="#06140C" stroke="#C7E85B" stroke-width="2"/>
+
+  <!-- Inner High-Contrast Frame Line -->
+  <polygon points="6,5 233,5 230,41 3,41" stroke="#173E2E" stroke-width="1" fill="none"/>
+
+  <!-- Horizontal slit -->
+  <line x1="2" y1="23" x2="234" y2="23" stroke="#C7E85B" stroke-width="0.8" opacity="0.6" stroke-dasharray="8,4,20,6"/>
+
+  <!-- Chromatic Offset (Lime) with open counters in B, O, D -->
+  <g fill="#C7E85B" fill-rule="evenodd" transform="translate(6, 7) scale(0.44)">
+    <path d="M 24 18 L 38 18 L 38 74 L 54 74 L 54 18 L 68 18 L 68 78 L 54 92 L 38 92 L 24 78 Z"/>
+    <path d="M 76 18 L 92 18 L 108 68 L 108 18 L 122 18 L 122 92 L 106 92 L 90 42 L 90 92 L 76 92 Z"/>
+    <path d="M 130 18 L 166 18 L 174 26 L 174 48 L 168 53 L 174 58 L 174 84 L 166 92 L 130 92 Z M 144 30 L 144 48 L 158 48 L 162 44 L 162 34 L 158 30 Z M 144 58 L 144 80 L 158 80 L 162 76 L 162 62 L 158 58 Z"/>
+    <path d="M 182 18 L 196 18 L 196 78 L 222 78 L 222 92 L 182 92 Z"/>
+    <path d="M 242 18 L 264 18 L 276 30 L 276 80 L 264 92 L 242 92 L 230 80 L 230 30 Z M 244 32 L 244 78 L 262 78 L 262 32 Z"/>
+    <path d="M 328 18 L 296 18 L 284 30 L 284 80 L 296 92 L 328 92 L 328 76 L 300 76 L 298 72 L 298 38 L 300 34 L 328 34 Z"/>
+    <path d="M 336 18 L 350 18 L 350 48 L 368 18 L 382 18 L 360 52 L 382 92 L 368 92 L 350 60 L 350 92 L 336 92 Z"/>
+    <path d="M 390 18 L 432 18 L 432 32 L 404 32 L 404 48 L 426 48 L 426 60 L 404 60 L 404 78 L 432 78 L 432 92 L 390 92 Z"/>
+    <path d="M 440 18 L 472 18 L 486 32 L 486 78 L 472 92 L 440 92 Z M 454 32 L 454 78 L 468 78 L 472 74 L 472 36 L 468 32 Z"/>
+  </g>
+
+  <!-- Primary Off-White Typography with open counters in B, O, D and clear C -->
+  <g fill="#F0EAD8" fill-rule="evenodd" transform="translate(7, 8) scale(0.44)">
+    <path d="M 24 18 L 38 18 L 38 74 L 54 74 L 54 18 L 68 18 L 68 78 L 54 92 L 38 92 L 24 78 Z"/>
+    <path d="M 76 18 L 92 18 L 108 68 L 108 18 L 122 18 L 122 92 L 106 92 L 90 42 L 90 92 L 76 92 Z"/>
+    <path d="M 130 18 L 166 18 L 174 26 L 174 48 L 168 53 L 174 58 L 174 84 L 166 92 L 130 92 Z M 144 30 L 144 48 L 158 48 L 162 44 L 162 34 L 158 30 Z M 144 58 L 144 80 L 158 80 L 162 76 L 162 62 L 158 58 Z"/>
+    <path d="M 182 18 L 196 18 L 196 78 L 222 78 L 222 92 L 182 92 Z"/>
+    <path d="M 242 18 L 264 18 L 276 30 L 276 80 L 264 92 L 242 92 L 230 80 L 230 30 Z M 244 32 L 244 78 L 262 78 L 262 32 Z"/>
+    <path d="M 328 18 L 296 18 L 284 30 L 284 80 L 296 92 L 328 92 L 328 76 L 300 76 L 298 72 L 298 38 L 300 34 L 328 34 Z"/>
+    <path d="M 336 18 L 350 18 L 350 48 L 368 18 L 382 18 L 360 52 L 382 92 L 368 92 L 350 60 L 350 92 L 336 92 Z"/>
+    <path d="M 390 18 L 432 18 L 432 32 L 404 32 L 404 48 L 426 48 L 426 60 L 404 60 L 404 78 L 432 78 L 432 92 L 390 92 Z"/>
+    <path d="M 440 18 L 472 18 L 486 32 L 486 78 L 472 92 L 440 92 Z M 454 32 L 454 78 L 468 78 L 472 74 L 472 36 L 468 32 Z"/>
+  </g>
+</svg>
