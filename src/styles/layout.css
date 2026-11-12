@@ -1,0 +1,41 @@
+/* Page chrome and the two-column homepage grid. */
+
+.magazine-margin-top {
+  height: 6px;
+  background: repeating-linear-gradient(90deg, var(--forest-deep) 0 12px, var(--neon-lime) 12px 24px);
+}
+
+.container {
+  position: relative;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: minmax(0, 78%) minmax(0, 22%);
+  gap: 20px;
+  padding: 24px 0 40px;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (max-width: 1099px) {
+  .main-content {
+    grid-template-columns: minmax(0, 72%) minmax(0, 28%);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
