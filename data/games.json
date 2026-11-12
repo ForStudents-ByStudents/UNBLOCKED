@@ -248,7 +248,7 @@
       "category": "ACTION",
       "rating": "",
       "dateAdded": "2026-11-11",
-      "thumbnail": "./thumbnails/rooftop-snipers.webp",
+      "thumbnail": "./thumbnails/rooftopsnipers.jpj",
       "cover": "./thumbnails/rooftop-snipers.webp",
       "blurb": "A fast rooftop duel where timing your jumps and shots is the key to winning.",
       "annotation": "STAY ON THE ROOF.",
@@ -260,25 +260,7 @@
       "systemReq": "MODERN WEB BROWSER · HTML5 / WEBGL",
       "audio": "BROWSER AUDIO"
     },
-    {
-      "id": "rocket-league",
-      "title": "Rocket League",
-      "genre": "SPORTS / RACING",
-      "category": "RACING",
-      "rating": "",
-      "dateAdded": "2026-11-11",
-      "thumbnail": "./thumbnails/rocketleague-placeholder.svg",
-      "cover": "./thumbnails/rocketleague-placeholder.svg",
-      "blurb": "Drive, accelerate, and use your car to send the ball toward the opponent’s goal.",
-      "annotation": "ALL GAS. ONE GIANT BALL.",
-      "subtitle": "DRIVE. HIT. SCORE.",
-      "description": "A browser-based, car-soccer-style game wrapper. Control a vehicle, chase the ball, and try to score. This supplied file may be a fan-made or simplified version rather than the official Rocket League game.",
-      "iframeUrl": "./games-iframes/rocketleague.html",
-      "players": "1 Player",
-      "controls": "Keyboard · Follow the in-game instructions for movement and actions",
-      "systemReq": "MODERN WEB BROWSER · HTML5 / WEBGL",
-      "audio": "BROWSER AUDIO"
-    },
+  
     {
       "id": "tomb-of-the-mask",
       "title": "Tomb of the Mask",
